@@ -1,0 +1,116 @@
+/* Reset body padding and margin, set background with fallback color */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Fallback color */
+    background-image: url('../../../assets/backgroundimage.png'); /* Path to your image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+    font-family: Arial, sans-serif; /* Unified font family */
+    height: 100vh; /* Ensure full height for body */
+    display: flex;
+    justify-content: center; /* Center the container horizontally */
+    align-items: center; /* Center the container vertically */
+    overflow: hidden; /* Prevent overflow */
+}
+
+/* Main container with padding, background, and shadow */
+.container {
+    text-align: center;
+    padding: 40px 30px; /* Balanced padding */
+    background-color: rgba(255, 255, 255, 0.85); /* Slightly transparent white background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+    max-width: 600px;
+    width: 90%; /* Ensure responsiveness */
+    box-sizing: border-box; /* Include padding and border in dimensions */
+}
+
+/* Main heading style */
+h1 {
+    font-size: 2.5rem; /* Responsive font size */
+    margin-bottom: 15px;
+    color: #333; /* Darker text color for contrast */
+    font-weight: 700; /* Bold heading */
+}
+
+/* Subheading style */
+h2 {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #555; /* Medium gray for subheading */
+    font-weight: 500;
+}
+
+/* Button container with spacing */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between buttons */
+    margin-top: 20px;
+}
+
+/* Shared button styles */
+.button {
+    padding: 10px 20px; /* Adjusted padding for a clean look */
+    font-size: 1.2rem; /* Unified button text size */
+    font-weight: 600; /* Bold text */
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box; /* Include padding and border in dimensions */
+    color: white; /* Unified text color */
+}
+
+/* Specific button styles */
+.menu-button {
+    background-color: #4CAF50; /* Green */
+}
+
+.reservation-button {
+    background-color: #2196F3; /* Blue */
+}
+
+/* Hover and focus states for buttons */
+.button:hover {
+    filter: brightness(1.1); /* Slight brightening effect */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.button:focus {
+    outline: none; /* Remove default outline */
+}
+
+/* Active state for buttons */
+.button:active {
+    transform: translateY(1px); /* Push effect on click */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 30px 20px; /* Adjust padding for smaller screens */
+    }
+
+    h1 {
+        font-size: 2rem; /* Smaller heading on mobile */
+    }
+
+    h2 {
+        font-size: 1rem; /* Adjust subheading size */
+    }
+
+    .button-container {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 10px; /* Adjust spacing */
+    }
+
+    .button {
+        width: 100%; /* Full-width buttons on mobile */
+    }
+}

@@ -1,0 +1,123 @@
+/* TodaysMenu.css */
+
+/* General container styling */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 15px; /* Reduced padding for a more compact look */
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  box-sizing: border-box;
+}
+
+/* Main heading styling */
+h1 {
+  font-size: 2rem; /* Reduced font size */
+  margin-bottom: 15px; /* Reduced margin */
+  color: #333;
+  text-align: center;
+  font-weight: bold; /* Emphasized heading */
+}
+
+/* Button styling */
+button {
+  padding: 10px 20px; /* Reduced padding for compact buttons */
+  font-size: 0.9rem; /* Slightly smaller font size */
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 6px; /* More subtle rounded corners */
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: translateY(-1px); /* Subtle lift effect */
+}
+
+button:active {
+  transform: translateY(0); /* No strong press effect */
+}
+
+/* Preferences section */
+.preferences {
+  margin-top: 15px;
+  padding: 10px; /* Reduced padding */
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Label styling */
+label {
+  display: block;
+  margin: 8px 0 4px; /* Reduced margin */
+  font-weight: 600;
+  color: #555;
+  font-size: 0.9rem; /* Slightly smaller label size */
+}
+
+/* Input and select styling */
+input[type="text"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 8px; /* Reduced padding for slimmer inputs */
+  margin-bottom: 10px; /* Reduced margin */
+  border-radius: 4px; /* Subtle rounded corners */
+  border: 1px solid #ccc;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+}
+
+input:focus,
+select:focus {
+  border-color: #4CAF50;
+  outline: none;
+  box-shadow: 0 0 4px rgba(76, 175, 80, 0.4);
+}
+
+/* Menu items section */
+#menuItems {
+  margin-top: 20px; /* Reduced spacing above section */
+  padding: 10px; /* Compact padding */
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual menu item styling */
+#menuItems div {
+  margin: 4px 0; /* Reduced vertical spacing */
+  font-size: 1.1rem; /* Slightly smaller font size */
+  color: #333;
+  padding: 6px 8px; /* Slimmer padding */
+  border-bottom: 1px solid #eee;
+}
+
+#menuItems div:last-child {
+  border-bottom: none;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px; /* Compact padding on smaller screens */
+  }
+
+  h1 {
+    font-size: 1.8rem; /* Adjusted heading size */
+  }
+
+  button {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  #menuItems div {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+}
